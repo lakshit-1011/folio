@@ -28,6 +28,25 @@ header {
   transition: all 0.45s ease;
 }
 
+.hov1{
+  transition: transform 0.3s ease;
+}
+
+.logo{
+  transition: transform 0.3s ease;
+}
+.logo:hover{
+  transform: translateX(50px); 
+}
+.hov1:hover{
+transform: translateY(-10px); 
+}
+.info{
+  transition: transform 0.3s ease;
+}
+.info:hover{
+  transform: translateX(10px); 
+}
 .head-section {
   width: 100%;
   background-color: #ecf0f3;
@@ -48,9 +67,14 @@ header {
 .Navbar {
   display: flex;
 }
-
+/* .onHover{
+  color: #e6e6e6;
+}
+.offHover{
+  color: rgb(143, 141, 141)
+} */
 .Navbar a {
-  color: #3c3e41;
+  color: rgb(37, 37, 37);
   font-weight: 600;
   font-size: 15px;
   font-weight: 500;
@@ -58,9 +82,9 @@ header {
   transition: all 0.45s ease;
 }
 
-.Navbar a:hover {
+/* .Navbar a:hover {
   color: black;
-}
+} */
 
 .home {
   height: 910px;
@@ -78,14 +102,14 @@ header {
     width: 481px;
     height: 600px;
   display: flex;
+  transition: transform 0.3s ease;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   padding-inline: 15px;
 }
 .home-content:hover{
-    transition: 0.6s smooth;
-   padding-bottom: 55px;
+  transform: translateY(-10px); 
 }
 .home-content-up {
   padding: 35px;
@@ -213,6 +237,10 @@ header {
     width: 673px;
     height: 600px;
     padding-inline: 15px;
+    transition: transform 0.3s ease;
+}
+.home-img:hover{
+  transform: translateY(-10px); 
 }
 .home-img-sub{
     padding: 34px;
